@@ -1,0 +1,216 @@
+.financial-education {
+  padding: 4rem 2rem;
+  background: var(--background);
+  min-height: 100vh;
+}
+
+.education-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(90deg, #7c3aed, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.education-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.education-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #7c3aed;
+  margin-bottom: 1.5rem;
+}
+
+.education-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-card ul li {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.education-card ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #7c3aed;
+}
+
+.card-image {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 150px;
+  height: 150px;
+  opacity: 0.1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease;
+}
+
+.education-card:hover .card-image {
+  opacity: 0.2;
+}
+
+.learning-resources {
+  margin-top: 4rem;
+}
+
+.learning-resources h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.resource-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.resource-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.resource-card:hover .resource-icon {
+  transform: scale(1.1);
+}
+
+.resource-card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #7c3aed;
+}
+
+.resource-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.resource-button {
+  background: linear-gradient(90deg, #7c3aed, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: auto;
+}
+
+.resource-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 1rem;
+}
+
+.cta-section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: linear-gradient(90deg, #7c3aed, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+@media (max-width: 768px) {
+  .financial-education {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+}
