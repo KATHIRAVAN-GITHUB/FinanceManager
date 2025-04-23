@@ -50,7 +50,7 @@ const FinancialInsights = () => {
       </motion.div>
 
       <motion.div
-        className="insights-grid"
+        className="insights-grid mt-50"
         ref={contentRef}
         initial={{ opacity: 0, y: 50 }}
         animate={contentInView ? { opacity: 1, y: 0 } : {}}
